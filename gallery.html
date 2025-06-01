@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Reyes Roofing & Restoration</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="description" content="View the project gallery of Reyes Roofing & Restoration. See examples of our quality roofing, restoration, and exterior work in Colorado.">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="logo.png" alt="Reyes Roofing & Restoration company logo" class="logo">
+    </a>
+    <nav class="header-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><button class="nav-cta header-cta" id="openEstimatePopup">Get a Free Estimate</button></li>
+      </ul>
+    </nav>
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+      <i class="fas fa-bars icon-menu-open"></i>
+      <i class="fas fa-times icon-menu-close" style="display:none;"></i>
+    </button>
+  </header>
+
+  <main class="page-container">
+    <h1>Our Work Gallery</h1>
+    <p style="text-align: center; margin-bottom: 30px;">Take a look at some of our completed projects.</p>
+    
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="https://via.placeholder.com/400x300.png?text=Project+1" alt="Roofing Project 1"></div>
+      <div class="gallery-item"><img src="https://via.placeholder.com/400x300.png?text=Project+2" alt="Restoration Project 2"></div>
+      <div class="gallery-item"><img src="https://via.placeholder.com/400x300.png?text=Project+3" alt="Siding Project 3"></div>
+      <div class="gallery-item"><img src="https://via.placeholder.com/400x300.png?text=Project+4" alt="Gutter Project 4"></div>
+      <div class="gallery-item"><img src="https://via.placeholder.com/400x300.png?text=Project+5" alt="Window Project 5"></div>
+      <div class="gallery-item"><img src="https://via.placeholder.com/400x300.png?text=Project+6" alt="Deck Project 6"></div>
+    </div>
+    <p style="text-align: center; margin-top: 30px;"><em>More project photos coming soon!</em></p>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-column footer-logo-summary">
+        <img src="logo.png" alt="Reyes Roofing & Restoration company logo" class="footer-logo">
+        <p>Reyes Roofing & Restoration is Colorado’s trusted name for roofing and exterior restoration.</p>
+        <div class="footer-location">Proudly serving all of Colorado.</div>
+      </div>
+      <div class="footer-column footer-quick-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-details">
+          <span><i class="fas fa-phone"></i> <a href="tel:7204220514">+1 (720) 422-0514</a></span>
+          <span><i class="fas fa-envelope"></i> <a href="mailto:support@reyesroofingrestoration.com">support@reyesroofingrestoration.com</a></span>
+        </div>
+      </div>
+      <div class="footer-column footer-social">
+        <h4>Connect With Us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61576798700135" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-google"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/company/reyes-roofing-restoration" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Reyes Roofing & Restoration. All rights reserved.</span>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <div id="estimateModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModalBtn">&times;</span>
+      <h2>Get a Free Estimate</h2>
+      <form id="estimateForm">
+        <label for="name">Name*</label><input type="text" id="name" name="name" required>
+        <label for="phone">Phone*</label><input type="tel" id="phone" name="phone" required pattern=".{10,}">
+        <label for="email">Email*</label><input type="email" id="email" name="email" required>
+        <label for="address">Address*</label><input type="text" id="address" name="address" required>
+        <label for="how-heard">How did you hear about us?</label>
+        <select id="how-heard" name="how-heard">
+          <option value="" selected>Select...</option>
+          <option value="Returning Customer">Returning Customer</option>
+          <option value="Word of Mouth">Word of Mouth</option>
+          <option value="Social Media">Social Media</option>
+          <option value="TV / Radio">TV / Radio</option>
+          <option value="Other">Other</option>
+        </select>
+        <button type="submit" class="submit-btn">Submit Request</button>
+      </form>
+    </div>
+  </div>
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSuccessBtn">&times;</span>
+      <h2>Get a Free Estimate</h2>
+      <div class="success-message">
+        <i class="fas fa-check-circle"></i>
+        <p>Thank you! We’ve received your request and will be in touch shortly.</p>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
